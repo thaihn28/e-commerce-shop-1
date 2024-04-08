@@ -888,8 +888,11 @@
     window.fbAsyncInit = function () {
         FB.init({
             appId: '543800174506471',
+            status : true, // check login status
+            cookie : true, // enable cookies to allow the server to access the session
             xfbml: true,
-            version: 'v19.0'
+            version: 'v19.0',
+            oauth  : true // enable OAuth 2.0
         });
     };
 
